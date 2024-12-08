@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saylor Innovations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #0a1128; /* Deep navy blue */
+      color: #ffffff; /* White text */
+      font-family: 'Inter', sans-serif;
+    }
+    .circuit-bg {
+      background: url('https://source.unsplash.com/random/1920x1080?circuit') no-repeat center;
+      background-size: cover;
+      opacity: 0.1;
+    }
+    .neon-text {
+      color: #2db3ff;
+      text-shadow: 0 0 8px #2db3ff;
+    }
+    .glow-button {
+      background: linear-gradient(90deg, #2db3ff, #11d4a8);
+      box-shadow: 0 0 10px #2db3ff, 0 0 20px #11d4a8;
+    }
+    .glow-button:hover {
+      box-shadow: 0 0 15px #2db3ff, 0 0 25px #11d4a8;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 border-b border-gray-700">
+    <div class="text-2xl neon-text font-bold">Saylor Innovations</div>
+    <nav class="space-x-4">
+      <a href="#" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#" class="text-gray-300 hover:text-white">About Us</a>
+      <a href="#" class="text-gray-300 hover:text-white">Services</a>
+      <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+    </nav>
+    <div class="space-x-2">
+      <button class="glow-button px-4 py-2 rounded text-white font-medium">Schedule Pickup</button>
+      <button class="glow-button px-4 py-2 rounded text-white font-medium">Order Kit</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center p-8 space-y-8 md:space-y-0 md:space-x-8">
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-6xl font-bold neon-text leading-tight">
+        We safely and responsibly recycle your old electronics.
+      </h1>
+      <p class="mt-4 text-lg text-gray-300">
+        Discover innovative, eco-friendly recycling solutions tailored for businesses, schools, and nonprofits. We make sustainability effortless.
+      </p>
+      <div class="mt-6 flex space-x-4">
+        <button class="glow-button px-6 py-3 rounded text-white font-medium">Learn More</button>
+        <button class="glow-button px-6 py-3 rounded text-white font-medium">Get Started</button>
+      </div>
+    </div>
+    <div class="flex-1 relative">
+      <img src="https://source.unsplash.com/random/600x400?recycle" alt="Recycling Graphic" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+</body>
+</html>
